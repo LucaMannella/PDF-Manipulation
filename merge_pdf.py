@@ -21,4 +21,4 @@ if __name__ == "__main__":
     output = sys.argv[1]
     print(f"Inputs: {pdfs}")
     merge_pdf(output, pdfs)
-    print(f"Merged. New pdf save into: {output}")
+    print(f"Merged. New pdf saved into: {output}")

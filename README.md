@@ -2,6 +2,15 @@
 
 A set of Python script to manipulate PDF files.
 
+## img_to_pdf.py
+
+Convert an image into a pdf. The image is put in the center of a A4 page.
+
+Usage:
+```bash
+	python img_to_pdf.py input_image.png output.pdf
+```
+
 ## pdf_word_counter.py
 
 Count the number of words in one or more PDF file.
