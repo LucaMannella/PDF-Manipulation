@@ -32,21 +32,23 @@ def remove_pages(pdf_file, num_pages, direction, output_file):
 
 if __name__ == "__main__":
 
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 4:
         print("Error: Missing arguments!")
         print("python remove_pages.py <input_file> <num_pages> <direction> [<output_file>]")
         sys.exit(130)
-    if len(sys.argv) > 4:
+    if len(sys.argv) > 5:
         print("Error: Too many argument!")
         print("python remove_pages.py <input_file> <num_pages> <direction> [<output_file>]")
+        for i in sys.argv:
+            print(i)
         sys.exit(131)
         
     pdf_file = sys.argv[1]
     num_pages = int(sys.argv[2])
     direction = sys.argv[3]
-    if len(sys.argv) == 4:
-        output_file = sys.argv[3]
+    if len(sys.argv) == 5:
+        output_file = sys.argv[4]
     else:
-        output_file = 'new_' + pdf_file
+        output_file = pdf_file + '_new.pdf'
     
     remove_pages(pdf_file, num_pages, direction, output_file)

@@ -31,6 +31,17 @@ The name of the output file is optional. Direction can be: "top" or "bottom".
 python remove_pages.py <input_file> <num_pages> <direction> [<output_file>]
 ```
 
+For instance, to remove the first page of a PDF you can write:
+```bash
+python remove_pages.py my_doc.pdf 1 top
+```
+
+And to remove the last page, you can write:
+```bash
+python remove_pages.py my_doc.pdf 1 bottom
+```
+
+
 ## rotate_pdf.py
 
 Rotate every page inside a PDF by 90 degrees right.
